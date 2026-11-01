@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meridian Air</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@500&family=Lexend:wght@500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg>
+      Meradian Air
+    </div>
+    <nav class="nav" aria-label="Main">
+      <button type="button" id="nav-book" data-action="nav" data-view="search">Book a flight</button>
+      <button type="button" id="nav-manage" data-action="nav" data-view="manage">Manage booking</button>
+    </nav>
+  </div>
+</header>
+
+<nav class="stepper" id="stepper" aria-label="Booking progress">
+  <div class="wrap">
+    <ol class="steps"></ol>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="layout" id="layout">
+    <main id="app"></main>
+    <aside id="summary" aria-label="Trip summary"></aside>
+  </div>
+</div>
+
+<footer class="wrap foot">
+  Demo booking site. Fares and schedules are generated for illustration, no payment is taken, and bookings are stored only in this browser for local use.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
